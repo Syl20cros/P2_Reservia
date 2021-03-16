@@ -1,0 +1,123 @@
+/*
+By Sylvain CROS
+*/
+
+/* Définition de la police personnalisée */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src:  url('fonts/Raleway-Regular.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header
+{
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: brown;
+    font-size: 1em;
+}
+
+#logo
+{
+    display: flex;
+    align-items: flex-end;
+    background: bisque;
+}
+
+#menu
+{
+    background: darkgoldenrod;
+    display: flex;
+    flex-wrap:wrap-reverse;
+}
+
+#sous_menu
+{
+    background: gray;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+
+#hebergement_link
+{
+    display:flex;
+    align-items: flex-end;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: black;
+}
+
+#activité_link
+{
+    display:flex;
+    align-items: flex-end;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: black;
+    
+}
+
+#inscription_link
+{
+    background: rgb(139, 226, 136);
+    font-weight:bold;
+    color: #0065FC;
+    display:flex;
+    align-items: flex-end;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+#activité_link:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#hebergement_link:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#inscription_link:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+
+
+#menu a
+{
+    text-decoration: none;
+    color: black;
+}
