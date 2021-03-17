@@ -121,3 +121,24 @@ header
     text-decoration: none;
     color: black;
 }
+
+/* Recherches */
+#recherches
+{
+    background: #bbc2c2;
+    
+}
+
+.bouton_perso
+{
+    background-color: #0065FC;
+    color: white;
+}
+
+/* Activités */
+#activité
+{
+    background: cadetblue;
+    
+}
+
