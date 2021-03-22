@@ -8,6 +8,8 @@
 		<link rel="stylesheet" media="screen and (max-width: 768px)" href="StyleMobile.css" />
 		<link rel="stylesheet" media="screen and (min-width: 769px)" href="StyleWeb.css" />
 		<script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 		<TITLE>Reservia</TITLE>
 	</head>
 
@@ -38,12 +40,15 @@
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
 				<p>En plein centre ville ou en pleine nature</p>
-				<div class="icone-template icon-left"><i class="fas fa-map-marker-alt"></i></div>
-				<form method="post" action="traitement.php"> <!-- Zone de recherche -->	
-					<label  for="find"></label>
-					<input type="search" name="find" id="find" size="15" placeholder="Toulouse, France" />
-					<input type="submit" value="Rechercher" class="bouton_perso"/>
-				</form>
+
+				<div class="ToolRecherche">
+					<div class="icone-template icon-left"><i class="fas fa-map-marker-alt"></i></div>
+					<form method="post" action="traitement.php"> <!-- Zone de recherche -->	
+						<label  for="find"></label>
+						<input type="search" name="find" id="find" size="15" placeholder="Toulouse, France" />
+						<input type="submit" value="Rechercher" class="bouton_perso"/>
+					</form>
+				</div>
 				
 
 			</section>

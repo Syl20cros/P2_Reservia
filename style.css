@@ -1,11 +1,5 @@
 /* Définition de la police personnalisée */
 
-@font-face{
-    font-family: 'Raleway';
-    src:  url('fonts/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* Eléments principaux de la page */
 *{
@@ -63,15 +57,27 @@ header a{
 }
 
 /* Recherches */
-#recherches{
+#Recherches{
     background: #bbc2c2;
-    
+}
+
+#Recherches h1{
+    margin-bottom: 1rem;
 }
 
 .bouton_perso{
     background-color: #0065FC;
     color: white;
 }
+.ToolRecherche{
+    background: khaki;
+    margin-top: 2rem;
+    display: flex;
+    height: 3rem;
+}
+
+
+
 
 /* Activités */
 #ActiviteSection{
