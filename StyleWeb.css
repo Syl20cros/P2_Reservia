@@ -1,0 +1,52 @@
+/* Eléments principaux de la page */
+#bloc_page
+{
+    max-width: 900px;
+    margin: auto;
+}
+/* Header */
+header
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 6rem;
+}
+.menu
+{
+    display:flex;
+    flex-direction: row; 
+    align-content: center;  
+}
+.SousMenu
+{
+    display:flex;
+    flex-direction: row;   
+}
+.HerbergementLink
+{
+    width: 15rem;
+    border-top: 0.2rem solid #0065fc ;
+}
+.ActiviteLink
+{
+    width: 15rem;
+}
+.inscrire
+{
+    width: 15rem;
+    display: flex;
+}
+header li:hover
+{
+    border-top: 0.2rem solid #0065fc ;
+}
+
+
+
+/* Activités */
+#ActiviteSection
+{
+    background: #8de98a;
+    
+}
