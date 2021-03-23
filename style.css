@@ -23,6 +23,10 @@ text-decoration: none;
 color: black;
 }
 
+strong{
+    font-weight: bold;
+}
+
 /* Header */
 header{
     text-align: center;
@@ -31,7 +35,8 @@ header{
 #logo{
     display: flex;
     align-items: flex-end;
-    padding-left: 20px;
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 .hebergement{
@@ -58,30 +63,139 @@ header a{
 
 /* Recherches */
 #Recherches{
-    background: #bbc2c2;
+    
 }
 
 #Recherches h1{
     margin-bottom: 1rem;
 }
 
+.bouton_perso_ico{
+    background-color: #0065FC;
+    color: white;
+    height: 4rem;
+    width: 5rem;
+    border-radius: 1rem;
+    right: 1rem;
+    border: 1px solid #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
+}
+
 .bouton_perso{
     background-color: #0065FC;
     color: white;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    position: relative;
+    right: 1rem;
+    border: 1px solid #0065FC;
+    display: none;
 }
 .ToolRecherche{
-    background: khaki;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    height: 4rem;
     display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+.ToolRecherche form{
+    display: flex;
+}
+
+.IconeLocation{
+    max-height: max-content;
+    width: 4rem;
+    height: 4rem;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+#find{
+    height: 4rem;
+    border: 1px solid #F2F2F2;
+
+}
+
+.filtres{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.filtres p{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ChoixFiltre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ChoixFiltre div{
+    border: 2px solid #F2F2F2;
+    height: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.filtres i{
+    background: #deebff;
+    color: #0065fc;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dispo{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.dispo i{  
+    font-size: 1.2rem;
+    color: #0065fc;
+    border: 2px solid #F2F2F2;
+    Width: 3rem;
     height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dispo p{
+    padding-left: 1.5rem;
 }
 
 
 
-
-/* Activités */
-#ActiviteSection{
-    background: cadetblue;
-    
+/* Herbergement */
+#HebergementSection{
+    background:#F2F2F2;
 }
+
+
 
