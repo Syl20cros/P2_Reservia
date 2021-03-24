@@ -42,13 +42,24 @@ header li:hover
 
 /* Recherches */
 #Recherches{
-    margin: 2.5rem; 
+    margin: 2.5rem;
 }
 
 
 /* Hebergement */
 #HebergementSection{
     margin: 2rem;
+    
+}
+.HebergBox{
+    display: flex;
+    align-items: center;
+}
+
+/* Les plus populaires */
+#PopulaireSection{
+    margin: 2rem;
+    
 }
 
 /* Activités */

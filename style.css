@@ -15,7 +15,7 @@
 body{
     font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 a{
@@ -24,7 +24,12 @@ color: black;
 }
 
 strong{
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+h1{
+    font-size: 2rem;
+    font: bold;
 }
 
 /* Header */
@@ -61,13 +66,11 @@ header a{
     color: #0065fc; 
 }
 
+/* ------------------------------------------------ */
 /* Recherches */
-#Recherches{
-    
-}
-
 #Recherches h1{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .bouton_perso_ico{
@@ -172,6 +175,7 @@ header a{
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .dispo i{  
@@ -190,12 +194,153 @@ header a{
     padding-left: 1.5rem;
 }
 
-
-
-/* Herbergement */
-#HebergementSection{
-    background:#F2F2F2;
+/* ------------------------------------------------ */
+/* Commun sections */
+h1{
+    padding: 2.5rem 0rem 2rem 2rem;
 }
 
+.etoiles{
+    display: flex;
+}
 
+/* ------------------------------------------------ */
+/* Herbergement */
+.HebergBox{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
 
+.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
+    background: white;
+    height: 18rem;
+    width: 30rem;
+    border-radius: 2.5rem;
+    box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.hb1 img, .hb2 img, .hb3 img, .hb4 img, .hb5 img, .hb6 img{
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border-color: white;
+    border-radius: 2.3rem 2.3rem 0 0;
+    padding: 0.5rem;
+}
+
+.HebergTexte{
+    padding: 0.5rem 0rem 0rem 2rem;
+}
+
+.hb1:hover> img, .hb2:hover > img, .hb3:hover > img, .hb4:hover > img, .hb5:hover > img, .hb6:hover > img{
+    transform: scale(1.06);
+    transition: transform .2s;
+}
+
+.more{
+    display: flex;
+    margin-left: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+/* Herbergement STAR */
+.hb1 .star1,.hb1 .star2,.hb1 .star3,.hb1 .star4{
+    color: #0065fc;
+}
+.hb1 .star5{
+    color:  #F2F2F2;
+}
+.hb2 i{
+    color: #0065fc;
+}
+.hb3 .star1,.hb3 .star2,.hb3 .star3,.hb3 .star4{
+    color: #0065fc;
+}
+.hb3 .star5{
+    color:  #F2F2F2;
+}
+.hb4 .star1,.hb4 .star2,.hb4 .star3{
+    color: #0065fc;
+}
+.hb4 .star5,.hb4 .star4{
+    color:  #F2F2F2;
+}
+.hb5 .star1,.hb5 .star2,.hb5 .star3,.hb5 .star4{
+    color: #0065fc;
+}
+.hb5 .star5{
+    color:  #F2F2F2;
+}
+.hb6 i{
+    color: #0065fc;
+}
+
+/* ------------------------------------------------ */
+/* Les plus populaires */
+#PopulaireSection{
+    background:#F2F2F2; 
+}
+
+.PopTitle{
+    display: flex;
+    justify-content: space-around;
+}
+
+.PolaireBox{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop1, .pop2, .pop3{
+    background: white;
+    height: 13rem;
+    width: 30rem;
+    border-radius: 2.5rem;
+    box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.pop1 img, .pop2 img, .pop3 img{
+    height: 100%;
+    width: 12rem;
+    object-fit: cover;
+    border-color: white;
+    border-radius: 2.3rem 0 0 2.3rem;
+    padding: 0.5rem;
+}
+
+.popTexte{
+    padding: 0.5rem 0rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.pop1:hover> img, .pop2:hover > img, .pop3:hover > img{
+    transform: scale(1.08);
+    transition: transform .2s;
+}
+
+/* Les plus populaires STAR */
+.pop1 i{
+    color: #0065fc;
+}
+.pop2 .star1,.pop2 .star2,.pop2 .star3,.pop2 .star4{
+    color: #0065fc;
+}
+.pop2 .star5{
+    color:  #F2F2F2;
+}
+.pop3 .star1,.pop3 .star2,.pop3 .star3,.pop3 .star4{
+    color: #0065fc;
+}
+.pop3 .star5{
+    color:  #F2F2F2;
+}
