@@ -31,6 +31,10 @@ h1{
     font-size: 2rem;
     font: bold;
 }
+h2{
+    font-size: 1.8rem;
+    font: bold;
+}
 
 /* Header */
 header{
@@ -351,6 +355,9 @@ h1{
 
 /* ------------------------------------------------ */
 /* Activites */
+#ActiviteSection{
+    margin-bottom: 2rem;
+}
 .ActivBox{
     display: flex; 
     flex-direction: column;
@@ -384,4 +391,21 @@ h1{
 .ac1:hover, .ac2:hover, .ac3:hover, .ac4:hover, .ac5:hover, .ac6:hover{
     transform: scale(1.06);
     transition: transform .2s;
+}
+/* ------------------------------------------------ */
+/* FOOTER */
+footer{
+    background: #F2F2F2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.APropos, .NosHebergements{
+    padding-right: 12rem;
+}
+
+footer h2, footer p{
+    padding-bottom: 1rem;
 }

@@ -117,3 +117,11 @@ header li:hover
 .ac6{
     height: 48%;
 }
+
+/* ------------------------------------------------ */
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
