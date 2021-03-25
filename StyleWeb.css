@@ -1,0 +1,127 @@
+/* Eléments principaux de la page */
+#bloc_page
+{
+    max-width: 1000px;
+    margin: auto;
+}
+/* Header */
+header
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 6rem;
+}
+.menu
+{
+    display:flex;
+    flex-direction: row; 
+    align-content: center;  
+}
+.SousMenu
+{
+    display:flex;
+    flex-direction: row;   
+}
+.HerbergementLink
+{
+    width: 15rem;
+    border-top: 0.2rem solid #0065fc ;
+}
+.ActiviteLink
+{
+    width: 15rem;
+    border-top: 0.2rem solid white ;
+}
+.inscrire
+{
+    width: 15rem;
+    display: flex;
+}
+header li:hover
+{
+    border-top: 0.2rem solid #0065fc ;
+}
+
+/* Recherches */
+.bouton_perso{
+    display: initial;
+}
+.bouton_perso_ico{
+    display: none;
+}
+
+/*content*/
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Hebergement*/
+#HebergementSection{
+    width: 65%;
+    background:#F2F2F2;
+    border-radius: 2.5rem;
+}
+
+.HebergBox{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
+    width: 20rem;
+}
+
+/* Les plus populaires */
+#PopulaireSection{
+    width: 31%;
+    border-radius: 2.5rem;
+}
+
+.pop1, .pop2, .pop3{
+    width: 28rem;
+}
+
+/* Activités */
+.ActivBox{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 35rem;
+    width: 100rem;
+}
+.ac1, .ac2, .ac3, .ac4, .ac5, .ac6{
+    width: 23rem;
+}
+.ac1{
+    height: 100%;
+}
+.ac2{
+    height: 55%;
+}
+.ac3{
+    height:35%;
+}
+.ac4{
+    height: 100%;
+}
+.ac5{
+    height: 42%;
+}
+.ac6{
+    height: 48%;
+}
+
+/* ------------------------------------------------ */
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

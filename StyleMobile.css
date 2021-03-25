@@ -1,0 +1,83 @@
+/* Header */
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+header ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.inscrire
+{
+    position: absolute;
+    top: 0; right: 0;
+    width: 15rem;
+    height: 4.5rem;
+    display: flex;
+    align-content: center;
+}
+
+.HerbergementLink 
+{
+    width: 50%;
+    border-bottom: 0.2rem solid #0065fc ;
+}
+
+.ActiviteLink
+{
+    width: 50%;
+    border-bottom: 0.2rem solid #F2F2F2 ;
+}
+
+header li:hover
+{
+    border-bottom: 0.2rem solid #0065fc ;
+}
+
+/* Recherches */
+#Recherches{
+    margin: 2.5rem;
+}
+
+/*Content*/
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hebergement */
+#HebergementSection{
+    margin-top: 2rem;
+    margin-bottom: 2rem;  
+    order: 1; 
+}
+
+.HebergBox{
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Les plus populaires */
+#PopulaireSection{
+    order: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;   
+}
+
+/* Activités */
+#ActiviteSection{
+    order: 2;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+.ActivBox{
+    display: flex;
+    align-items: center;
+}
