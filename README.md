@@ -1,4 +1,5 @@
 # SylvainCros_2_16032021
-Projet 2 openClassroom
 
 This is my "projet 2" for openClassroom
+
+[github page](https://syl20cros.github.io/SylvainCros_2_16032021/)
