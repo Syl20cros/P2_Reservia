@@ -45,27 +45,39 @@ header li:hover
     margin: 2.5rem;
 }
 
+/*Content*/
+.content{
+    display: flex;
+    flex-direction: column;
+}
 
 /* Hebergement */
 #HebergementSection{
-    margin: 2rem;
-    
+    margin-top: 2rem;
+    margin-bottom: 2rem;  
+    order: 1; 
 }
+
 .HebergBox{
     display: flex;
     align-items: center;
+    
 }
 
 /* Les plus populaires */
 #PopulaireSection{
-    margin: 2rem;
-    
+    order: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;   
 }
 
 /* Activités */
-#ActiviteSection
-{
-    margin: 2rem;
-    background: #d68ae9;
-
+#ActiviteSection{
+    order: 2;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+.ActivBox{
+    display: flex;
+    align-items: center;
 }

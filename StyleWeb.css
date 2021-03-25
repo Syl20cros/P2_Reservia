@@ -31,6 +31,7 @@ header
 .ActiviteLink
 {
     width: 15rem;
+    border-top: 0.2rem solid white ;
 }
 .inscrire
 {
@@ -54,8 +55,9 @@ header li:hover
 .content{
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
+
 /*Hebergement*/
 #HebergementSection{
     width: 65%;
@@ -85,8 +87,33 @@ header li:hover
 }
 
 /* Activités */
-#ActiviteSection
-{
-    background: #8de98a;
-    
+.ActivBox{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 35rem;
+    width: 100rem;
+}
+.ac1, .ac2, .ac3, .ac4, .ac5, .ac6{
+    width: 23rem;
+}
+.ac1{
+    height: 100%;
+}
+.ac2{
+    height: 55%;
+}
+.ac3{
+    height:35%;
+}
+.ac4{
+    height: 100%;
+}
+.ac5{
+    height: 42%;
+}
+.ac6{
+    height: 48%;
 }
