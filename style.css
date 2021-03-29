@@ -14,13 +14,12 @@ html {
 
 body{
     font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
-    color: #181818;
     font-size: 1.5rem;
 }
 
 a{
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 }
 
 strong{
@@ -33,6 +32,10 @@ h1{
 }
 h2{
     font-size: 1.8rem;
+    font: bold;
+}
+h3{
+    font-size: 1.5rem;
     font: bold;
 }
 
@@ -52,7 +55,6 @@ header{
 
 li{
     list-style-type: none;
-    
 }
 
 header a{  
@@ -199,7 +201,10 @@ header a{
 
 .etoiles{
     display: flex;
+    color:hsl(0, 0%, 79%);
+    font-size: 1.3rem;
 }
+
 
 /* ------------------------------------------------ */
 /* Les plus populaires */
@@ -217,6 +222,7 @@ header a{
     display: flex; 
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .pop1, .pop2, .pop3{
@@ -248,26 +254,13 @@ header a{
     padding-top: 1rem;
 }
 
-.pop1:hover> img, .pop2:hover > img, .pop3:hover > img{
-    transform: scale(1.08);
-    transition: transform .2s;
+.populaireBox span{
+    color: #0065fc;
 }
 
-/* Les plus populaires STAR */
-.pop1 i{
-    color: #0065fc;
-}
-.pop2 .star1,.pop2 .star2,.pop2 .star3,.pop2 .star4{
-    color: #0065fc;
-}
-.pop2 .star5{
-    color:  #F2F2F2;
-}
-.pop3 .star1,.pop3 .star2,.pop3 .star3,.pop3 .star4{
-    color: #0065fc;
-}
-.pop3 .star5{
-    color:  #F2F2F2;
+.pop1:hover, .pop2:hover, .pop3:hover{
+    transform: scale(1.08);
+    transition: transform .2s;
 }
 
 /* ------------------------------------------------ */
@@ -300,7 +293,11 @@ header a{
     padding: 0.5rem 0rem 0rem 2rem;
 }
 
-.hb1:hover> img, .hb2:hover > img, .hb3:hover > img, .hb4:hover > img, .hb5:hover > img, .hb6:hover > img{
+.hebergBox span{
+    color: #0065fc;
+}
+
+.hb1:hover, .hb2:hover, .hb3:hover, .hb4:hover, .hb5:hover, .hb6:hover{
     transform: scale(1.06);
     transition: transform .2s;
 }
@@ -311,40 +308,6 @@ header a{
     padding-top: 1.2rem;
     padding-bottom: 3rem;
 }
-
-/* Hebergement STAR */
-
-.hb1 .star1,.hb1 .star2,.hb1 .star3,.hb1 .star4{
-    color: #0065fc;
-}
-.hb1 .star5{
-    color:  #F2F2F2;
-}
-.hb2 i{
-    color: #0065fc;
-}
-.hb3 .star1,.hb3 .star2,.hb3 .star3,.hb3 .star4{
-    color: #0065fc;
-}
-.hb3 .star5{
-    color:  #F2F2F2;
-}
-.hb4 .star1,.hb4 .star2,.hb4 .star3{
-    color: #0065fc;
-}
-.hb4 .star5,.hb4 .star4{
-    color:  #F2F2F2;
-}
-.hb5 .star1,.hb5 .star2,.hb5 .star3,.hb5 .star4{
-    color: #0065fc;
-}
-.hb5 .star5{
-    color:  #F2F2F2;
-}
-.hb6 i{
-    color: #0065fc;
-}
-
 
 /* ------------------------------------------------ */
 /* Activites */

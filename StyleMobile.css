@@ -46,6 +46,12 @@ header li:hover
     flex-direction: column;
 }
 
+/* Les plus populaires */
+#populaireSection{
+    margin-top: 2rem;
+    margin-bottom: 2rem;   
+}
+
 /* Hebergement */
 #hebergementSection{
     margin-top: 2rem;
@@ -56,12 +62,6 @@ header li:hover
     display: flex;
     align-items: center;
     
-}
-
-/* Les plus populaires */
-#populaireSection{
-    margin-top: 2rem;
-    margin-bottom: 2rem;   
 }
 
 /* Activités */
