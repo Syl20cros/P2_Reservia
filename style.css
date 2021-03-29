@@ -17,6 +17,10 @@ body{
     font-size: 1.5rem;
 }
 
+p{
+    margin-bottom: 0.5rem;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -33,10 +37,12 @@ h1{
 h2{
     font-size: 1.8rem;
     font: bold;
+    margin-bottom: 0.3rem;
 }
 h3{
     font-size: 1.5rem;
     font: bold;
+    margin-bottom: 0.3rem;
 }
 
 /* Header */
@@ -129,13 +135,14 @@ header a{
     font-weight: bold;
 }
 
-.filtres p{
+.filtres h3{
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 .choixFiltre{
@@ -151,6 +158,11 @@ header a{
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
+    
+}
+
+.choixFiltre p{
+    padding: 1rem;
 }
 
 .filtres i{
@@ -290,7 +302,7 @@ header a{
 }
 
 .hebergTexte{
-    padding: 0.5rem 0rem 0rem 2rem;
+    padding: 0rem 0rem 0rem 2rem;
 }
 
 .hebergBox span{
@@ -363,6 +375,6 @@ footer ul{
     padding-right: 12rem;
 }
 
-footer h2, footer p{
+footer h2, footer li{
     padding-bottom: 1rem;
 }
