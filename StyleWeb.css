@@ -1,53 +1,53 @@
 /* Eléments principaux de la page */
-#bloc_page
+body
 {
-    max-width: 1000px;
     margin: auto;
 }
-/* Header */
-header
-{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 6rem;
+
+header, #recherches, .content{
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
-.menu
-{
+/* Header */
+header ul{
     display:flex;
     flex-direction: row; 
-    align-content: center;  
+    justify-content: center;
 }
-.SousMenu
-{
+.logo{
+    flex-grow: 1;
     display:flex;
-    flex-direction: row;   
+    justify-content: flex-start;
 }
-.HerbergementLink
+
+.hebergementLink
 {
     width: 15rem;
     border-top: 0.2rem solid #0065fc ;
 }
-.ActiviteLink
+
+.activiteLink
 {
     width: 15rem;
     border-top: 0.2rem solid white ;
 }
-.inscrire
+
+.inscrireLink
 {
     width: 15rem;
-    display: flex;
+    order: 3;
 }
-header li:hover
+
+header .activiteLink:hover
 {
     border-top: 0.2rem solid #0065fc ;
 }
 
 /* Recherches */
-.bouton_perso{
+.boutonPerso{
     display: initial;
 }
-.bouton_perso_ico{
+.boutonPersoIco{
     display: none;
 }
 
@@ -58,14 +58,21 @@ header li:hover
     flex-wrap: wrap;
 }
 
+/* Les plus populaires */
+#populaireSection{
+    width: 31%;
+    border-radius: 2.5rem;
+    order: 0;
+}
+
 /*Hebergement*/
-#HebergementSection{
+#hebergementSection{
     width: 65%;
     background:#F2F2F2;
     border-radius: 2.5rem;
 }
 
-.HebergBox{
+.hebergBox{
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
@@ -73,31 +80,21 @@ header li:hover
 }
 
 .hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
-    width: 20rem;
-}
-
-/* Les plus populaires */
-#PopulaireSection{
-    width: 31%;
-    border-radius: 2.5rem;
-}
-
-.pop1, .pop2, .pop3{
-    width: 28rem;
+    width: 30%;
+    min-width: 20rem;
 }
 
 /* Activités */
-.ActivBox{
+.activBox{
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     height: 35rem;
-    width: 100rem;
 }
 .ac1, .ac2, .ac3, .ac4, .ac5, .ac6{
-    width: 23rem;
+    width: 22%;
 }
 .ac1{
     height: 100%;

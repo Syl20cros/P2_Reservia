@@ -6,9 +6,9 @@
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;
-  }
+}
 
-  html {
+html {
 	font-size: 62.5%;
 }
 
@@ -42,8 +42,6 @@ header{
 }
 
 #logo{
-    display: flex;
-    align-items: flex-end;
     padding-left: 2rem;
     padding-top: 1rem;
 }
@@ -51,13 +49,10 @@ header{
 .hebergement{
     color:#0065fc ;
 }
-.inscrire{
-    height: 3.5rem;
-}
 
-header li{
+li{
     list-style-type: none;
-    margin: auto;
+    
 }
 
 header a{  
@@ -65,19 +60,18 @@ header a{
 }
 
 .InscrireSub{
-    margin: auto; 
     font-weight: bold;
     color: #0065fc; 
 }
 
 /* ------------------------------------------------ */
 /* Recherches */
-#Recherches h1{
+#recherches h1{
     margin-bottom: 0.5rem;
     margin-top: 2rem;
 }
 
-.bouton_perso_ico{
+.boutonPersoIco{
     background-color: #0065FC;
     color: white;
     height: 4rem;
@@ -91,7 +85,7 @@ header a{
     margin-left: -2rem;
 }
 
-.bouton_perso{
+.boutonPerso{
     background-color: #0065FC;
     color: white;
     height: 4rem;
@@ -102,20 +96,14 @@ header a{
     border: 1px solid #0065FC;
     display: none;
 }
-.ToolRecherche{
+#recherches form{
     margin-top: 3rem;
     margin-bottom: 2rem;
     height: 4rem;
     display: flex;
-    justify-content: flex-start ;
-    align-items: center;
 }
 
-.ToolRecherche form{
-    display: flex;
-}
-
-.IconeLocation{
+.iconeLocation{
     max-height: max-content;
     width: 4rem;
     height: 4rem;
@@ -148,12 +136,12 @@ header a{
     padding-right: 1rem;
 }
 
-.ChoixFiltre{
+.choixFiltre{
     display: flex;
     flex-wrap: wrap;
 }
 
-.ChoixFiltre div{
+.choixFiltre li{
     border: 2px solid #F2F2F2;
     height: 4rem;
     border-radius: 2rem;
@@ -175,6 +163,10 @@ header a{
     position: relative;
 }
 
+.filtres li:hover{
+    background: #deebff ;
+}
+
 .dispo{
     display: flex;
     align-items: center;
@@ -192,6 +184,7 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
 }
 
 .dispo p{
@@ -199,8 +192,8 @@ header a{
 }
 
 /* ------------------------------------------------ */
-/* Commun sections */
-h1{
+/* Content */
+.content h1{
     padding: 2.5rem 0rem 2rem 2rem;
 }
 
@@ -208,96 +201,19 @@ h1{
     display: flex;
 }
 
-
-
-/* ------------------------------------------------ */
-/* Herbergement */
-.HebergBox{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
-    background: white;
-    height: 18rem;
-    width: 30rem;
-    border-radius: 2.5rem;
-    box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
-    margin-bottom: 1.5rem;
-}
-
-.hb1 img, .hb2 img, .hb3 img, .hb4 img, .hb5 img, .hb6 img{
-    width: 100%;
-    height: 11rem;
-    object-fit: cover;
-    border-color: white;
-    border-radius: 2.3rem 2.3rem 0 0;
-    padding: 0.5rem;
-}
-
-.HebergTexte{
-    padding: 0.5rem 0rem 0rem 2rem;
-}
-
-.hb1:hover> img, .hb2:hover > img, .hb3:hover > img, .hb4:hover > img, .hb5:hover > img, .hb6:hover > img{
-    transform: scale(1.06);
-    transition: transform .2s;
-}
-
-.more{
-    display: flex;
-    margin-left: 2rem;
-    padding-top: 1.2rem;
-    padding-bottom: 3rem;
-}
-
-/* Herbergement STAR */
-
-.hb1 .star1,.hb1 .star2,.hb1 .star3,.hb1 .star4{
-    color: #0065fc;
-}
-.hb1 .star5{
-    color:  #F2F2F2;
-}
-.hb2 i{
-    color: #0065fc;
-}
-.hb3 .star1,.hb3 .star2,.hb3 .star3,.hb3 .star4{
-    color: #0065fc;
-}
-.hb3 .star5{
-    color:  #F2F2F2;
-}
-.hb4 .star1,.hb4 .star2,.hb4 .star3{
-    color: #0065fc;
-}
-.hb4 .star5,.hb4 .star4{
-    color:  #F2F2F2;
-}
-.hb5 .star1,.hb5 .star2,.hb5 .star3,.hb5 .star4{
-    color: #0065fc;
-}
-.hb5 .star5{
-    color:  #F2F2F2;
-}
-.hb6 i{
-    color: #0065fc;
-}
-
 /* ------------------------------------------------ */
 /* Les plus populaires */
-#PopulaireSection{
+#populaireSection{
     background:#F2F2F2; 
 }
 
-.PopTitle{
+.popTitle{
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
 }
 
-.PolaireBox{
+.populaireBox{
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -306,11 +222,12 @@ h1{
 .pop1, .pop2, .pop3{
     background: white;
     height: 13rem;
-    width: 30rem;
+    width: 92%;
     border-radius: 2.5rem;
     box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
     display: flex;
+
 }
 
 .pop1 img, .pop2 img, .pop3 img{
@@ -354,11 +271,88 @@ h1{
 }
 
 /* ------------------------------------------------ */
-/* Activites */
-#ActiviteSection{
-    margin-bottom: 2rem;
+/* Hebergement */
+.hebergBox{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
-.ActivBox{
+
+.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
+    background: white;
+    height: 18rem;
+    width: 92%;
+    border-radius: 2.5rem;
+    box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.hb1 img, .hb2 img, .hb3 img, .hb4 img, .hb5 img, .hb6 img{
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border-color: white;
+    border-radius: 2.3rem 2.3rem 0 0;
+    padding: 0.5rem;
+}
+
+.hebergTexte{
+    padding: 0.5rem 0rem 0rem 2rem;
+}
+
+.hb1:hover> img, .hb2:hover > img, .hb3:hover > img, .hb4:hover > img, .hb5:hover > img, .hb6:hover > img{
+    transform: scale(1.06);
+    transition: transform .2s;
+}
+
+.more{
+    display: flex;
+    margin-left: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+/* Hebergement STAR */
+
+.hb1 .star1,.hb1 .star2,.hb1 .star3,.hb1 .star4{
+    color: #0065fc;
+}
+.hb1 .star5{
+    color:  #F2F2F2;
+}
+.hb2 i{
+    color: #0065fc;
+}
+.hb3 .star1,.hb3 .star2,.hb3 .star3,.hb3 .star4{
+    color: #0065fc;
+}
+.hb3 .star5{
+    color:  #F2F2F2;
+}
+.hb4 .star1,.hb4 .star2,.hb4 .star3{
+    color: #0065fc;
+}
+.hb4 .star5,.hb4 .star4{
+    color:  #F2F2F2;
+}
+.hb5 .star1,.hb5 .star2,.hb5 .star3,.hb5 .star4{
+    color: #0065fc;
+}
+.hb5 .star5{
+    color:  #F2F2F2;
+}
+.hb6 i{
+    color: #0065fc;
+}
+
+
+/* ------------------------------------------------ */
+/* Activites */
+#activiteSection{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.activBox{
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -367,7 +361,7 @@ h1{
 .ac1, .ac2, .ac3, .ac4, .ac5, .ac6{
     background: white;
     height: 18rem;
-    width: 30rem;
+    width: 92%;
     border-radius: 2.5rem;
     box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
@@ -402,7 +396,7 @@ footer{
     padding: 2rem;
 }
 
-.APropos, .NosHebergements{
+footer ul{
     padding-right: 12rem;
 }
 

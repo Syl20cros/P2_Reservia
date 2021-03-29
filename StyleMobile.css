@@ -1,35 +1,30 @@
 /* Header */
-header
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
 header ul
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
+    flex-wrap: wrap;
 }
-
-.inscrire
-{
-    position: absolute;
-    top: 0; right: 0;
-    width: 15rem;
-    height: 4.5rem;
+.logo{
+    width: 50%;
     display: flex;
-    align-content: center;
+    justify-content: left;
+    padding-left: 2rem;
+}
+.inscrireLink{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+
 }
 
-.HerbergementLink 
+.hebergementLink 
 {
     width: 50%;
     border-bottom: 0.2rem solid #0065fc ;
 }
 
-.ActiviteLink
+.activiteLink
 {
     width: 50%;
     border-bottom: 0.2rem solid #F2F2F2 ;
@@ -41,7 +36,7 @@ header li:hover
 }
 
 /* Recherches */
-#Recherches{
+#recherches{
     margin: 2.5rem;
 }
 
@@ -52,32 +47,29 @@ header li:hover
 }
 
 /* Hebergement */
-#HebergementSection{
+#hebergementSection{
     margin-top: 2rem;
     margin-bottom: 2rem;  
-    order: 1; 
 }
 
-.HebergBox{
+.hebergBox{
     display: flex;
     align-items: center;
     
 }
 
 /* Les plus populaires */
-#PopulaireSection{
-    order: 0;
+#populaireSection{
     margin-top: 2rem;
     margin-bottom: 2rem;   
 }
 
 /* Activités */
-#ActiviteSection{
-    order: 2;
+#activiteSection{
     margin-top: 2rem;
     margin-bottom: 2rem; 
 }
-.ActivBox{
+.activBox{
     display: flex;
     align-items: center;
 }
