@@ -62,7 +62,7 @@ header .activiteLink:hover
 #populaireSection{
     width: 31%;
     border-radius: 2.5rem;
-    order: 0;
+    order: 1;
 }
 
 /*Hebergement*/
@@ -70,6 +70,11 @@ header .activiteLink:hover
     width: 65%;
     background:#F2F2F2;
     border-radius: 2.5rem;
+    order: 0;
+}
+
+#activiteSection{
+    order: 2;
 }
 
 .hebergBox{
