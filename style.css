@@ -217,6 +217,9 @@ header a{
     font-size: 1.3rem;
 }
 
+.starEmpty{
+    color: #0065fc;
+}
 
 /* ------------------------------------------------ */
 /* Les plus populaires */
@@ -229,6 +232,10 @@ header a{
     justify-content: space-between;
     padding-right: 2rem;
 }
+.popTitle i{
+    padding: 2.5rem 0rem 2rem 2rem;
+    font-size: 2rem;
+}
 
 .populaireBox{
     display: flex; 
@@ -237,7 +244,7 @@ header a{
     width: 100%;
 }
 
-.pop1, .pop2, .pop3{
+.populaireBox >a{
     background: white;
     height: 13rem;
     width: 92%;
@@ -248,7 +255,7 @@ header a{
 
 }
 
-.pop1 img, .pop2 img, .pop3 img{
+.populaireBox img{
     height: 100%;
     width: 12rem;
     object-fit: cover;
@@ -266,11 +273,7 @@ header a{
     padding-top: 1rem;
 }
 
-.populaireBox span{
-    color: #0065fc;
-}
-
-.pop1:hover, .pop2:hover, .pop3:hover{
+.populaireBox a:hover{
     transform: scale(1.08);
     transition: transform .2s;
 }
@@ -283,7 +286,7 @@ header a{
     justify-content: center;
 }
 
-.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
+.hebergBox article{
     background: white;
     height: 18rem;
     width: 92%;
@@ -292,7 +295,7 @@ header a{
     margin-bottom: 1.5rem;
 }
 
-.hb1 img, .hb2 img, .hb3 img, .hb4 img, .hb5 img, .hb6 img{
+.hebergBox img{
     width: 100%;
     height: 11rem;
     object-fit: cover;
@@ -305,11 +308,8 @@ header a{
     padding: 0rem 0rem 0rem 2rem;
 }
 
-.hebergBox span{
-    color: #0065fc;
-}
 
-.hb1:hover, .hb2:hover, .hb3:hover, .hb4:hover, .hb5:hover, .hb6:hover{
+.hebergBox article:hover{
     transform: scale(1.06);
     transition: transform .2s;
 }
@@ -340,24 +340,28 @@ header a{
     border-radius: 2.5rem;
     box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
-
 }
 
-.ac1 img, .ac2 img, .ac3 img, .ac4 img, .ac5 img, .ac6 img{
+.activBox img{
     width: 100%;
     height: 100%;
     padding-bottom: 3.5rem;
     object-fit: cover;
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-    
 }
 
 .acTexte{
     padding: 0.5rem 0rem 0rem 1.3rem;
     margin-top: -3.5rem ;
+    
+}
+.acTexte p{
+    white-space: nowrap;
+    overflow: hidden
 }
 
-.ac1:hover, .ac2:hover, .ac3:hover, .ac4:hover, .ac5:hover, .ac6:hover{
+
+.activBox a:hover{
     transform: scale(1.06);
     transition: transform .2s;
 }
@@ -368,13 +372,12 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
 }
 
-footer ul{
-    padding-right: 12rem;
+footer h3{
+   margin-bottom: 2rem;
 }
 
 footer h2, footer li{
-    padding-bottom: 1rem;
+    padding-bottom: 1.3rem;
 }
