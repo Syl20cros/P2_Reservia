@@ -6,21 +6,24 @@
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;
-  }
+}
 
-  html {
+html {
 	font-size: 62.5%;
 }
 
 body{
     font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
-    color: #181818;
     font-size: 1.5rem;
 }
 
+p{
+    margin-bottom: 0.5rem;
+}
+
 a{
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 }
 
 strong{
@@ -34,6 +37,12 @@ h1{
 h2{
     font-size: 1.8rem;
     font: bold;
+    margin-bottom: 0.3rem;
+}
+h3{
+    font-size: 1.5rem;
+    font: bold;
+    margin-bottom: 0.3rem;
 }
 
 /* Header */
@@ -42,8 +51,6 @@ header{
 }
 
 #logo{
-    display: flex;
-    align-items: flex-end;
     padding-left: 2rem;
     padding-top: 1rem;
 }
@@ -51,13 +58,9 @@ header{
 .hebergement{
     color:#0065fc ;
 }
-.inscrire{
-    height: 3.5rem;
-}
 
-header li{
+li{
     list-style-type: none;
-    margin: auto;
 }
 
 header a{  
@@ -65,19 +68,18 @@ header a{
 }
 
 .InscrireSub{
-    margin: auto; 
     font-weight: bold;
     color: #0065fc; 
 }
 
 /* ------------------------------------------------ */
 /* Recherches */
-#Recherches h1{
+#recherches h1{
     margin-bottom: 0.5rem;
     margin-top: 2rem;
 }
 
-.bouton_perso_ico{
+.boutonPersoIco{
     background-color: #0065FC;
     color: white;
     height: 4rem;
@@ -91,7 +93,7 @@ header a{
     margin-left: -2rem;
 }
 
-.bouton_perso{
+.boutonPerso{
     background-color: #0065FC;
     color: white;
     height: 4rem;
@@ -102,20 +104,14 @@ header a{
     border: 1px solid #0065FC;
     display: none;
 }
-.ToolRecherche{
+#recherches form{
     margin-top: 3rem;
     margin-bottom: 2rem;
     height: 4rem;
     display: flex;
-    justify-content: flex-start ;
-    align-items: center;
 }
 
-.ToolRecherche form{
-    display: flex;
-}
-
-.IconeLocation{
+.iconeLocation{
     max-height: max-content;
     width: 4rem;
     height: 4rem;
@@ -139,21 +135,22 @@ header a{
     font-weight: bold;
 }
 
-.filtres p{
+.filtres h3{
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1rem;
 }
 
-.ChoixFiltre{
+.choixFiltre{
     display: flex;
     flex-wrap: wrap;
 }
 
-.ChoixFiltre div{
+.choixFiltre li{
     border: 2px solid #F2F2F2;
     height: 4rem;
     border-radius: 2rem;
@@ -161,6 +158,11 @@ header a{
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
+    
+}
+
+.choixFiltre p{
+    padding: 1rem;
 }
 
 .filtres i{
@@ -173,6 +175,10 @@ header a{
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.filtres li:hover{
+    background: #deebff ;
 }
 
 .dispo{
@@ -192,6 +198,7 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
 }
 
 .dispo p{
@@ -199,118 +206,46 @@ header a{
 }
 
 /* ------------------------------------------------ */
-/* Commun sections */
-h1{
+/* Content */
+.content h1{
     padding: 2.5rem 0rem 2rem 2rem;
 }
 
 .etoiles{
     display: flex;
+    color:hsl(0, 0%, 79%);
+    font-size: 1.3rem;
 }
 
-
-
-/* ------------------------------------------------ */
-/* Herbergement */
-.HebergBox{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
-    background: white;
-    height: 18rem;
-    width: 30rem;
-    border-radius: 2.5rem;
-    box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
-    margin-bottom: 1.5rem;
-}
-
-.hb1 img, .hb2 img, .hb3 img, .hb4 img, .hb5 img, .hb6 img{
-    width: 100%;
-    height: 11rem;
-    object-fit: cover;
-    border-color: white;
-    border-radius: 2.3rem 2.3rem 0 0;
-    padding: 0.5rem;
-}
-
-.HebergTexte{
-    padding: 0.5rem 0rem 0rem 2rem;
-}
-
-.hb1:hover> img, .hb2:hover > img, .hb3:hover > img, .hb4:hover > img, .hb5:hover > img, .hb6:hover > img{
-    transform: scale(1.06);
-    transition: transform .2s;
-}
-
-.more{
-    display: flex;
-    margin-left: 2rem;
-    padding-top: 1.2rem;
-    padding-bottom: 3rem;
-}
-
-/* Herbergement STAR */
-
-.hb1 .star1,.hb1 .star2,.hb1 .star3,.hb1 .star4{
-    color: #0065fc;
-}
-.hb1 .star5{
-    color:  #F2F2F2;
-}
-.hb2 i{
-    color: #0065fc;
-}
-.hb3 .star1,.hb3 .star2,.hb3 .star3,.hb3 .star4{
-    color: #0065fc;
-}
-.hb3 .star5{
-    color:  #F2F2F2;
-}
-.hb4 .star1,.hb4 .star2,.hb4 .star3{
-    color: #0065fc;
-}
-.hb4 .star5,.hb4 .star4{
-    color:  #F2F2F2;
-}
-.hb5 .star1,.hb5 .star2,.hb5 .star3,.hb5 .star4{
-    color: #0065fc;
-}
-.hb5 .star5{
-    color:  #F2F2F2;
-}
-.hb6 i{
-    color: #0065fc;
-}
 
 /* ------------------------------------------------ */
 /* Les plus populaires */
-#PopulaireSection{
+#populaireSection{
     background:#F2F2F2; 
 }
 
-.PopTitle{
+.popTitle{
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
 }
 
-.PolaireBox{
+.populaireBox{
     display: flex; 
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .pop1, .pop2, .pop3{
     background: white;
     height: 13rem;
-    width: 30rem;
+    width: 92%;
     border-radius: 2.5rem;
     box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
     display: flex;
+
 }
 
 .pop1 img, .pop2 img, .pop3 img{
@@ -331,34 +266,68 @@ h1{
     padding-top: 1rem;
 }
 
-.pop1:hover> img, .pop2:hover > img, .pop3:hover > img{
+.populaireBox span{
+    color: #0065fc;
+}
+
+.pop1:hover, .pop2:hover, .pop3:hover{
     transform: scale(1.08);
     transition: transform .2s;
 }
 
-/* Les plus populaires STAR */
-.pop1 i{
+/* ------------------------------------------------ */
+/* Hebergement */
+.hebergBox{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
+    background: white;
+    height: 18rem;
+    width: 92%;
+    border-radius: 2.5rem;
+    box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.hb1 img, .hb2 img, .hb3 img, .hb4 img, .hb5 img, .hb6 img{
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border-color: white;
+    border-radius: 2.3rem 2.3rem 0 0;
+    padding: 0.5rem;
+}
+
+.hebergTexte{
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.hebergBox span{
     color: #0065fc;
 }
-.pop2 .star1,.pop2 .star2,.pop2 .star3,.pop2 .star4{
-    color: #0065fc;
+
+.hb1:hover, .hb2:hover, .hb3:hover, .hb4:hover, .hb5:hover, .hb6:hover{
+    transform: scale(1.06);
+    transition: transform .2s;
 }
-.pop2 .star5{
-    color:  #F2F2F2;
-}
-.pop3 .star1,.pop3 .star2,.pop3 .star3,.pop3 .star4{
-    color: #0065fc;
-}
-.pop3 .star5{
-    color:  #F2F2F2;
+
+.more{
+    display: flex;
+    margin-left: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 3rem;
 }
 
 /* ------------------------------------------------ */
 /* Activites */
-#ActiviteSection{
+#activiteSection{
     margin-bottom: 2rem;
+    width: 100%;
 }
-.ActivBox{
+.activBox{
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -367,7 +336,7 @@ h1{
 .ac1, .ac2, .ac3, .ac4, .ac5, .ac6{
     background: white;
     height: 18rem;
-    width: 30rem;
+    width: 92%;
     border-radius: 2.5rem;
     box-shadow:  3px 3PX 3PX 2.5PX rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
@@ -402,10 +371,10 @@ footer{
     padding: 2rem;
 }
 
-.APropos, .NosHebergements{
+footer ul{
     padding-right: 12rem;
 }
 
-footer h2, footer p{
+footer h2, footer li{
     padding-bottom: 1rem;
 }
