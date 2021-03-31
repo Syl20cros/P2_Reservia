@@ -79,7 +79,7 @@ header a{
     margin-top: 2rem;
 }
 
-.boutonPersoIco{
+#recherches button{
     background-color: #0065FC;
     color: white;
     height: 4rem;
@@ -111,7 +111,7 @@ header a{
     display: flex;
 }
 
-.iconeLocation{
+#recherches label{
     max-height: max-content;
     width: 4rem;
     height: 4rem;

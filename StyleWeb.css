@@ -47,7 +47,7 @@ header .activiteLink:hover
 .boutonPerso{
     display: initial;
 }
-.boutonPersoIco{
+#recherches button{
     display: none;
 }
 
@@ -61,8 +61,10 @@ header .activiteLink:hover
 /* Les plus populaires */
 #populaireSection{
     width: 31%;
+    min-width: 27rem;
     border-radius: 2.5rem;
     order: 1;
+    margin-top: 1rem;
 }
 
 /*Hebergement*/
@@ -71,6 +73,7 @@ header .activiteLink:hover
     background:#F2F2F2;
     border-radius: 2.5rem;
     order: 0;
+    margin-top: 1rem;
 }
 
 #activiteSection{
@@ -84,7 +87,7 @@ header .activiteLink:hover
     flex-wrap: wrap;
 }
 
-.hb1, .hb2, .hb3, .hb4, .hb5, .hb6{
+.hebergBox article{
     width: 30%;
     min-width: 20rem;
 }
@@ -99,7 +102,7 @@ header .activiteLink:hover
     align-content: space-between;
     height: 35rem;
 }
-.ac1, .ac2, .ac3, .ac4, .ac5, .ac6{
+.activBox >a{
     width: 22%;
 }
 .ac1{
@@ -126,8 +129,10 @@ header .activiteLink:hover
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 5rem;
+    
 }
-footer ul{
-    padding-left: 4rem;
+footer >div{
+    flex-grow: 1;
 }
