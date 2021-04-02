@@ -76,6 +76,5 @@ header .activiteLink:hover
 
 /* FOOTER */
 footer{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem;
 }
