@@ -257,7 +257,7 @@ header a{
 
 .populaireBox img{
     height: 100%;
-    width: 12rem;
+    width: 40%;
     object-fit: cover;
     border-color: white;
     border-radius: 2.3rem 0 0 2.3rem;

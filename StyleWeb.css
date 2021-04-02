@@ -61,7 +61,7 @@ header .activiteLink:hover
 /* Les plus populaires */
 #populaireSection{
     width: 31%;
-    min-width: 27rem;
+    min-width: 22rem;
     border-radius: 2.5rem;
     order: 1;
     margin-top: 1rem;
