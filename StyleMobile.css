@@ -30,7 +30,7 @@ header ul
     border-bottom: 0.2rem solid #F2F2F2 ;
 }
 
-header li:hover
+header .activiteLink:hover
 {
     border-bottom: 0.2rem solid #0065fc ;
 }
@@ -72,4 +72,9 @@ header li:hover
 .activBox{
     display: flex;
     align-items: center;
+}
+
+/* FOOTER */
+footer{
+    padding: 2rem;
 }
