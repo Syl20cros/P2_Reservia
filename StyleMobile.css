@@ -40,8 +40,8 @@ header .activiteLink:hover
     margin: 2.5rem;
 }
 
-/*Content*/
-.content{
+/*Main*/
+main{
     display: flex;
     flex-direction: column;
 }

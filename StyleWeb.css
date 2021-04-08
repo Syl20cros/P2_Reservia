@@ -4,7 +4,7 @@ body
     margin: auto;
 }
 
-header, #recherches, .content{
+header, #recherches, main{
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -51,8 +51,8 @@ header .activiteLink:hover
     display: none;
 }
 
-/*content*/
-.content{
+/*main*/
+main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
